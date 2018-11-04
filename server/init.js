@@ -12,7 +12,7 @@ const failureCache = LRU({
 const debug = require('debug')('bp:request')
 
 const requestQueue = new Queue({
-  concurrency: 4,
+  concurrency: 7,
   maxAge: 60 * 2,
 })
 
